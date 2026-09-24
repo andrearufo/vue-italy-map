@@ -1,23 +1,58 @@
 {
   "name": "vue-italy-map",
-  "version": "2.0.0",
-  "main": "src/main.js",
-  "repository": "https://andrearufo@github.com/andrearufo/vue-italy-map.git",
-  "author": "andrearufo <a.rufo@axio.studio>",
-  "license": "MIT",
-  "private": true,
+  "version": "3.0.0",
+  "description": "Componente Vue 3 con la mappa SVG interattiva delle 20 regioni italiane: selezione con v-model, accessibile da tastiera, personalizzabile via CSS.",
+  "keywords": [
+    "vue",
+    "vue3",
+    "italy",
+    "italia",
+    "map",
+    "mappa",
+    "regioni",
+    "regions",
+    "svg",
+    "component"
+  ],
+  "homepage": "https://andrearufo.github.io/vue-italy-map/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrearufo/vue-italy-map.git"
+  },
+  "bugs": "https://github.com/andrearufo/vue-italy-map/issues",
+  "author": "Andrea Rufo <a.rufo@axio.studio>",
+  "license": "GPL-3.0-only",
   "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./dist/vue-italy-map.js",
+  "module": "./dist/vue-italy-map.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./dist/vue-italy-map.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "src/index.d.ts"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --mode lib",
+    "build:demo": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "vue": "^3.4.29"
+  "peerDependencies": {
+    "vue": "^3.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "sass": "^1.77.8",
-    "vite": "^5.3.1"
+    "@vitejs/plugin-vue": "^6.0.9",
+    "vite": "^8.3.0",
+    "vue": "^3.5.43"
   }
 }
