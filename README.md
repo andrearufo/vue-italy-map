@@ -83,6 +83,7 @@ Ogni regione è un `role="button"` focusabile con `aria-label`, `aria-pressed` e
 npm install
 npm run dev         # pagina demo con hot reload
 npm run build       # libreria → dist/
+npm test            # test (Vitest)
 npm run build:demo  # demo → dist-demo/ (deploy automatico su GitHub Pages da master)
 ```
 

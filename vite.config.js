@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // `vite build --mode lib` → pacchetto npm in dist/
 // `vite` / `vite build`   → pagina demo (GitHub Pages) in dist-demo/
+// `vitest`                → test (happy-dom)
 export default defineConfig(({ mode }) =>
   mode === 'lib'
     ? {
@@ -17,6 +18,8 @@ export default defineConfig(({ mode }) =>
           rollupOptions: { external: ['vue'] },
         },
       }
+    : mode === 'test'
+    ? { plugins: [vue()], test: { environment: 'happy-dom' } }
     : {
         plugins: [vue()],
         root: 'demo',
