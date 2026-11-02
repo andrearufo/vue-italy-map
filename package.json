@@ -45,8 +45,8 @@
     "build": "vite build --mode lib",
     "build:demo": "vite build",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepare": "vite build --mode lib"
   },
   "peerDependencies": {
     "vue": "^3.5.0"
