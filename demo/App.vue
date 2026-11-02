@@ -13,7 +13,7 @@ function onSelect(r) {
 }
 
 async function copy() {
-  await navigator.clipboard.writeText('npm install vue-italy-map')
+  await navigator.clipboard.writeText('npm install github:andrearufo/vue-italy-map')
   copied.value = true
   setTimeout(() => (copied.value = false), 1500)
 }
@@ -30,11 +30,10 @@ async function copy() {
       </p>
       <div class="actions">
         <button class="install" @click="copy">
-          <span>$ npm install vue-italy-map</span>
+          <span>$ npm i github:andrearufo/vue-italy-map</span>
           <small>{{ copied ? 'Copiato ✓' : 'Copia' }}</small>
         </button>
         <a class="btn" href="https://github.com/andrearufo/vue-italy-map">GitHub</a>
-        <a class="btn" href="https://www.npmjs.com/package/vue-italy-map">npm</a>
       </div>
     </header>
 
@@ -376,6 +375,10 @@ footer {
 }
 
 @media (max-width: 760px) {
+  .install {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
   .demo,
   .docs {
     grid-template-columns: 1fr;

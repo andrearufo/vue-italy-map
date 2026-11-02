@@ -1,7 +1,7 @@
 # vue-italy-map
 
-[![npm](https://img.shields.io/npm/v/vue-italy-map)](https://www.npmjs.com/package/vue-italy-map)
-[![license](https://img.shields.io/npm/l/vue-italy-map)](LICENSE)
+[![version](https://img.shields.io/github/v/tag/andrearufo/vue-italy-map?label=version)](https://github.com/andrearufo/vue-italy-map/tags)
+[![license](https://img.shields.io/github/license/andrearufo/vue-italy-map)](LICENSE)
 
 Componente **Vue 3** con la mappa SVG interattiva delle **20 regioni italiane**.
 Selezione con `v-model`, navigabile da tastiera, stile personalizzabile con variabili CSS. Zero dipendenze oltre a Vue.
@@ -11,8 +11,10 @@ Selezione con `v-model`, navigabile da tastiera, stile personalizzabile con vari
 ## Installazione
 
 ```bash
-npm install vue-italy-map
+npm install github:andrearufo/vue-italy-map#v3.0.0
 ```
+
+Il pacchetto non è su npm: si installa direttamente da GitHub (il build parte da solo all'installazione). Il tag `#v3.0.0` fissa la versione; senza tag prendi l'ultima di `master`.
 
 ## Uso
 
