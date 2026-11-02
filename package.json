@@ -20,7 +20,7 @@
     "url": "git+https://github.com/andrearufo/vue-italy-map.git"
   },
   "bugs": "https://github.com/andrearufo/vue-italy-map/issues",
-  "author": "Andrea Rufo <a.rufo@axio.studio>",
+  "author": "Andrea Rufo <andrearufodev@gmail.com>",
   "license": "GPL-3.0-only",
   "type": "module",
   "sideEffects": [
